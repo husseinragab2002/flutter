@@ -516,7 +516,7 @@ class BoxConstraints extends Constraints {
   }) {
     assert(() {
       void throwError(DiagnosticsNode message) {
-        throw FlutterError.fromParts(<DiagnosticsNode>[
+          throw FlutterError.fromParts(<DiagnosticsNode>[
           message,
           if (informationCollector != null) ...informationCollector(),
           DiagnosticsProperty<BoxConstraints>('The offending constraints were', this, style: DiagnosticsTreeStyle.errorProperty),

@@ -328,7 +328,7 @@ class PlatformAssetBundle extends CachingAssetBundle {
       encoded.buffer.asByteData(),
     )?.then((ByteData? asset) {
       if (asset == null) {
-        throw FlutterError.fromParts(<DiagnosticsNode>[
+          throw FlutterError.fromParts(<DiagnosticsNode>[
           _errorSummaryWithKey(key),
           ErrorDescription('The asset does not exist or has empty data.'),
         ]);
